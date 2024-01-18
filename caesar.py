@@ -93,8 +93,11 @@ def decrypt(message, k):
 message = "Holidays are over"
 k = 10
 
-encrypted = encrypt(message, k)
-decrypted = decrypt(encrypted, k)
+    # encrypt your word
+    encrypted = encrypt(message, key)
 
-print("Encrypted message is:" + encrypted)
-print("Decrypted message is:" + decrypted)
+    # decrypt your encrypted word
+    decrypted = decrypt(encrypted, key)
+
+    print("Your encrypted word is", encrypted)
+    print("Your decrypted word is", decrypted)
